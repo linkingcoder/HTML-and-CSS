@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单fieldset与legend</title>
+</head>
+<body>
+<form action="http://search.jd.com/search">
+   <fieldset>
+       <legend>主要信息</legend>
+           <label for="zhanghu">账户：</label><input id="zhanghu" type="text" name="account" maxlength="10"> <br>
+           <label>
+               密码：<input type="password" name="pwd"  maxlength="10"> <br>
+           </label>
+           性别：
+           <input type="radio" name="gender" value="male" id="nan">
+           <label for="nan">男</label>
+           <input type="radio" name="gender" value="female" id="nv">
+           <label for="nv">女</label>
+   </fieldset>
+    <br>
+    <fieldset>
+        <legend>附加信息</legend>
+        爱好:
+        <label>
+            <input type="checkbox" name="hobby" value="smoking" > 抽烟
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="drinking"> 喝酒
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="perming"> 烫头
+        </label>
+        <br>
+        <label for="qita">其他：</label>
+        <textarea id="qita" name="other" cols="23" rows="3" ></textarea><br>
+        籍贯：
+        <select name="place">
+            <option value="0">河北</option>
+            <option value="1">北京</option>
+        </select>
+    </fieldset>
+
+    <input type="hidden" name="from" value="baidu">
+    <br>
+    <input type="submit" value="确认">
+    <input type="reset" value="重置">
+    <input type="button" value="检测账户是否已经被注册">
+
+</form>
+</body>
+</html>
